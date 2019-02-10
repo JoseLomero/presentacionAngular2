@@ -1,20 +1,86 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="controls">
-  <span class="toPrevious" (click)="onPrevious()">Anterior</span>
-  <span class="toNext" (click)="onNext()">Siguiente</span>
+  <span class="toPrevious" (click)="onPrevious()"></span>
+  <span class="toNext" (click)="onNext()"></span>
 </div>
 
 <ul>
   <li [@changeDiapositive]="animationDirection" class="diapositiva-1" *ngIf="diapositiva == 1">
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
+    <div class="title">
+      <h1>Presentación de Angular</h1>
+    </div>
+    <div class="image-logo">
+      <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+    </div>
+    <div class="user-names">
+      <h3>José Manuel Lomero Oro</h3>
+      <h3>Nil Llibert Garcia Delshorts</h3>
+    </div>
   </li>
+
   <li [@changeDiapositive]="animationDirection"  class="diapositiva-2" *ngIf="diapositiva == 2">
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-    <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+    <div class="title">
+      <h1>¿Qué es Angular?</h1>
+    </div>
+    <div class="explanation">
+      <h2>Framework de JavaScript</h2>
+      <h2>Crea Single Page Applications (SPAs) reactivas</h2>
+    </div>
+    <div class="image-relleno">
+      <img alt="Angular-Explanation" width="400" src="assets/img/frameworks.png">
+    </div>
   </li>
+
   <li [@changeDiapositive]="animationDirection" class="diapositiva-3" *ngIf="diapositiva == 3">
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
+    <div class="title">
+      <h1>¿En qué se diferencia Angular 2 de Angular?</h1>
+    </div>
+    <div class="image-explication">
+      <img alt="Angular-Explanation" width="700" src="assets/img/angulardiapo.png">
+    </div>
+  </li>
+
+  <li [@changeDiapositive]="animationDirection" class="diapositiva-4" *ngIf="diapositiva == 4">
+    <div class="title">
+      <h1>Sus Características</h1>
+    </div>
+    <div class="explanation">
+      <h2>Desarrollo movil</h2>
+      <h2>Modularidad</h2>
+      <h2>Compatibilidad</h2>
+
+      <h3>Todo utilizando TypeScript</h3>
+    </div>
+    <div class="image-relleno">
+      <img alt="Angular-Explanation" width="400" src="assets/img/spa-example.jpeg">
+    </div>
+  </li>
+  
+  <li [@changeDiapositive]="animationDirection" class="diapositiva-5" *ngIf="diapositiva == 5">
+    <div class="title">
+      <h1>Instalación</h1>
+    </div>
+    <div class="explanation">
+      <h2>Para instalarlo necesitaremos:</h2>
+      <h3>· NodeJS</h3>
+      <h3>· npm package manager</h3>
+      <h3>· Y de manera opcional pero recomendable, Git</h3>
+    </div>
+  </li>
+  
+  <li [@changeDiapositive]="animationDirection" class="diapositiva-6" *ngIf="diapositiva == 6">
+      <div class="title">
+          <h1>Instalación</h1>
+        </div>
+        <div class="explanation">
+          <h2>Finalmnente, usaremos los siguientes comandos</h2>
+        </div>
+        <div class="image-explication">
+          <img alt="Angular-Explanation" width="400" src="assets/img/instruciones.png">
+        </div>
+  </li>
+
+  <li [@changeDiapositive]="animationDirection" class="diapositiva-7" *ngIf="diapositiva == 7">
+      <img alt="Fin-presentacion" class="end-presen" src="assets/img/frinpresent.png">
   </li>
 </ul>
-
-<!-- <router-outlet></router-outlet> -->

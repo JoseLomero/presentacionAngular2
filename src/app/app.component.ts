@@ -31,7 +31,7 @@ export class AppComponent {
 
   animationDirection;
 
-  private totalDiapositivas = 3;
+  private totalDiapositivas = 7;
 
   @HostListener('document:keydown', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent): void {
