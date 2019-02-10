@@ -1,0 +1,51 @@
+:host {
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  li {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    list-style: none;
+  }
+}
+
+.diapositiva- {
+  &1 {
+    background: #ff0;
+  }
+
+  &2 {
+    background: #0ff;
+  }
+
+  &3 {
+    background: #f0f;
+  }
+}
+
+.controls {
+  $controlHeight: 30px;
+  >span {
+    position: absolute;
+    height: $controlHeight;
+    top: calc(50vh - 15px);
+    z-index: 9;
+  }
+  .toPrevious {
+    left: 15px;
+  }
+  .toNext {
+    right: 15px;
+  }
+}
